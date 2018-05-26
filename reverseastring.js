@@ -12,4 +12,5 @@ function reverseIt(input) {
 var input = prompt("Enter a string: ","");
 
 console.log(reverseIt(input));
-document.write("The reverse of your string is " + result + ".");
+document.write("The string you entered is ( " + input + " ).<br>");
+document.write("The reverse of your string is ( " + result + ").");
