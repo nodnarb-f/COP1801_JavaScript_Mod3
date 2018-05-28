@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Entry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="JavaScript">
+      function showInput() {
+          document.getElementById("display").innerHTML =
+          document.getElementById("input").value;
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <form>
+      <label><b>Enter a string here: </b></label>
+      <input type="text" name="message" id="input">
+    </form><br>
+    Click the button to see what was entered into the form.<br><br>
+
+    <input type="submit" value="Button" onclick="showInput();"><br/>
+    <br>
+    <label>Information entered into the form: </label>
+    <p id="display"></p>
+
+
+  </body>
+</html>
